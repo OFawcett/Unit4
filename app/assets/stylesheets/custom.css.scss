@@ -1,0 +1,32 @@
+
+.navbar {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home_container {
+  margin-top: 25px;
+}
+
+#myjumbo {
+  padding: 3rem 2rem;
+  background-image: asset-url('bombinsand.jpg');
+  background-size: cover;
+  height: 470px;
+}
+
+#page {
+  background-color: rgb(190, 212, 205);
+}
