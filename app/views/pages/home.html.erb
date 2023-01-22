@@ -4,13 +4,30 @@
         <h1 class="display-4">Owen's Test Website UI</h1>
         <p class="lead">This website is purely UI, backend information can be found on another file.</p>
         <hr class="my-4">
-        <p>I like backend way better</p>
+        <p>I like backend way better (P.S If the dropdown doesn't work refresh the page you doingus, user-error much?)</p>
         <p class="lead">
-          <a class="btn btn-success btn-lg" href="#" role="button">Continue!</a>
+          <%= link_to 'About Page', about_path, class: "btn btn-success btn-lg" %>
         </p>
     </div>
 </div>
-
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <%= link_to "Articles", articles_path, class: "nav-link" %>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More Actions
+      </a>
+      <div class="dropdown-menu navbarDropdown bg-dark">
+          <%= link_to 'Create Article', new_article_path, class: "nav-link dropdown-item" %>
+          
+          <%= link_to 'Back to home', root_path, class: "nav-link dropdown-item" %>
+          
+          <div class="dropdown-divider"></div>
+          <%= link_to 'Easter Egg!', about_path, class: "nav-link dropdown-item" %>
+      </div>
+  </ul>
+</div>
 <footer id="sticky footer" class="footer fixed-bottom mt-auto py-4 bg-dark">
   <div class="container">
     <div class="text-center">
